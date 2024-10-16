@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    appDir: true, // Enables the App Router if needed
+  },
+  output: "standalone", // Vercel optimization
 };
 
-export default nextConfig;
+module.exports = nextConfig;
